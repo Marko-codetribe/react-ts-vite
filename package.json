@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "eslint-import-resolver-typescript": "^3.5.3",
+    "i18next": "^22.4.13",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
@@ -34,5 +36,5 @@
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix",
     "src/**/*.{js,jsx,ts,tsx,css,scss,md}": "prettier --write --ignore-unknown"
-}
+  }
 }

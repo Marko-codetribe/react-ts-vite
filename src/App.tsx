@@ -2,13 +2,16 @@ import { useState } from "react"
 import reactLogo from "./assets/react.svg"
 import viteLogo from "/vite.svg"
 import "./App.css"
+import "./i18n/i18n"
+import { useTranslation } from "react-i18next"
 
 function App() {
   const [count, setCount] = useState(0)
+  const { t } = useTranslation()
   return (
     <div className="App">
       <div>
-        <a href='https://vitejs.dev'
+        <a href="https://vitejs.dev"
           target="_blank"
           rel="noreferrer">
           <img src={viteLogo}
@@ -23,7 +26,7 @@ function App() {
             alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>{t("title")} Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
