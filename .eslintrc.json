@@ -1,0 +1,101 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint-config-prettier",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "overrides": [
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+          },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "import",
+        "react-hooks"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/style-prop-object": "off",
+        "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "ts": "never",
+              "tsx": "never"
+            }
+          ],
+          "no-multiple-empty-lines": ["error", { "max": 2 }],
+          "no-console": ["error", { "allow": ["warn", "error"] }],
+          "react-hooks/rules-of-hooks": "error",
+          "react-hooks/exhaustive-deps": "warn",
+        "indent": [
+            "warn",
+            2,
+            {
+                "ignoredNodes": ["JSXAttribute", "JSXSpreadAttribute"]
+              }
+        ],
+        "react/jsx-indent": ["warn", 2],
+        "react/jsx-indent-props": ["warn", 2],
+        "object-curly-spacing": ["warn", "always"],
+        "react/jsx-curly-spacing": [
+          "warn",
+          {
+            "when": "never"
+          }
+        ],
+        "no-multi-spaces": "warn",
+        "react/jsx-tag-spacing": [
+          "warn",
+          {
+            "closingSlash": "never",
+            "beforeSelfClosing": "always",
+            "afterOpening": "never",
+            "beforeClosing": "allow"
+          }
+        ],
+        "react/jsx-closing-bracket-location": [
+          "warn",
+          {
+            "selfClosing": "after-props",
+            "nonEmpty": "after-props"
+          }
+        ],
+        "react/jsx-max-props-per-line": [
+          "warn",
+          {
+            "maximum": 1
+          }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": ["warn", "double"],
+        "semi": ["warn", "never"]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+          },
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
+      }
+}
