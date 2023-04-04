@@ -32,7 +32,7 @@
         "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
         "import/extensions": [
             "error",
-            "ignorePackages",
+            // "ignorePackages",
             {
               "ts": "never",
               "tsx": "never"
