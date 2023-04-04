@@ -1,5 +1,8 @@
 {
-    "title": "Hello",
-    "home_page.title": "Homepage",
-    "user_page.title": "User page"
+    "home_page": {
+        "title": "Homepage"
+    },
+    "user_page": {
+        "title": "User page"
+    }
 }
