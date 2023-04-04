@@ -30,21 +30,15 @@ async function main() {
     .on("end", function () {
       parseAndMoveTranslations(records)
     })
-  // eslint-disable-next-line no-console
-  console.log("radsd. iii")
 }
 
 main()
-
-parseAndMoveTranslations()
 
 ////////////////////
 // HELPER FUNCTIONS
 ////////////////////
 
 function parseAndMoveTranslations(records) {
-  // eslint-disable-next-line no-console
-  console.log("radiii")
   const translations = {
     // will look like
     // "en.hello": "hello",
@@ -73,7 +67,7 @@ function parseAndMoveTranslations(records) {
   for (let locale of supportedLanguages) {
     // write translations to the directory
     writeFileSync(
-      `./i18n/locales/${locale}.json`,
+      `./src/i18n/locales/${locale}.json`,
       JSON.stringify(ExpandedTranslations[locale], null, 4),
       { encoding: "utf8", flag: "w" }
     )
