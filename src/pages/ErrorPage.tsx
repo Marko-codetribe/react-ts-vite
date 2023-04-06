@@ -5,7 +5,7 @@ export default function ErrorPage() {
     <div>
       <div>
         <h1>Oops! 404</h1>
-        <p>Page Not Found!</p>
+        <p>Page Not Found! </p>
         <ActiveLink to="/"
           activeClassName="active">
           Home
