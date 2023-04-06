@@ -18,13 +18,10 @@ This README would normally document whatever steps are necessary to get your app
       - [`npm run translate`](#npm-run-translate)
       - [`npm run find-unused-translations`](#npm-run-find-unused-translations)
     - [Translations](#translations)
-    - [Design system](#design-system)
-    - [Tailwind](#tailwind)
+    - [Tailwind](#TailwindCSS)
     - [vite.config.js](#viteconfigjs)
     - [ESLint](#eslint)
     - [Husky](#husky)
-    - [Tests](#tests)
-    - [Context store](#context-store)
     - [Folder structure](#folder-structure)
     - [Things to Know](#things-to-know)
 <!--toc:end-->
@@ -115,7 +112,6 @@ Configures Vite to support TypeScript path aliases, adds support for SVGR to ena
 
 ESLint is used to lint and format the code.
 
-> NOTE: Please make sure to disable other code format tools such as Prettier or Rome.
 ### Husky
 
 Husky is used to:
