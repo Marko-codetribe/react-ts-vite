@@ -7,8 +7,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint --fix ./src",
     "prepare": "husky install",
-    "translate": "node ./src/scripts/getTranslations.js"
+    "translate": "node ./scripts/getTranslations.js"
   },
   "dependencies": {
     "csv-parse": "^5.3.6",
