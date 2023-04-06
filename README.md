@@ -162,8 +162,11 @@ fix: Use Big.js in order to have precise rounding
 │   │           ├── components
 │   │           │    └── Contains components that are not reusable, but strictly tied to a page.
 │   │           └── SomeOtherPage.tsx
-│   └── router
-│   
+│   ├──  router
+│   │   
+│   └──  types
+|
+|
 ├── package.json
 ├── prettierrc.json - Prettier Configuration.
 ├── postcss.config.cjs - Postcss Configuration required for Tailwind.
