@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next"
 import reactLogo from "@/assets/react.svg"
-import viteLogo from "@/public/vite.svg"
+import viteLogo from "@/assets/vite.svg"
 
 export default function HomePage() {
   const { t } = useTranslation()
